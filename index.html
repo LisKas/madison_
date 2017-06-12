@@ -29,12 +29,12 @@
                        <img src="img/logo/main.png" alt="">
                    </div>
                    
-                       <div class="social">
+                  <div class="social">
                             <a href="" class="social-k" ></a>
                             <a href="" class="social-t" ></a>
                             <a href="" class="social-tw" ></a>
                             <a href="" class="social-world" ></a>
-                        </div>
+                  </div>
               </div>
               <div class="site-menu">
                   <ul class="navigator">
@@ -44,8 +44,6 @@
                             <li><a href="">Lorem Ipsum</a></li>
                             <li><a href="">etus et malesuada</a></li>  
                             <li><a href="">etus et malesuada</a></li>
-                                     
-
                         </ul>      
                                       
                      </li>
@@ -54,47 +52,40 @@
                      <li><a href="">WORK</a></li>
                      <li><a href="">REGULAR PAGE</a></li>
                      <li><a href="">CONTACT</a></li>
-                        </ul>
+                  </ul>
                   
 
               </div>
-                
-             
-              
-
-          
-                  <div class="carousel">
+              <div class="carousel">
               <div><img src="http://lorempixel.com/930/400/sports/5"/></div>
               <div><img src="http://lorempixel.com/930/400/sports" /></div>
               <div><img src="http://lorempixel.com/930/400/sports/3" /></div>
               <div><img src="http://lorempixel.com/930/400/sports/1" /></div>
               <div><img src="http://lorempixel.com/930/400/sports/2"/></div>
-                  </div>
+              </div>
               
              <div class="content-page">
                    <h2>SHOWCASE YOUR WORK WITH MADISON</h2>
                    <div class="cnt-head clearfix">
-                        <div class="col-1">FEATURED WORK</div>
+                        <p class="col-title">FEATURED WORK</p>
                         <a href="">view all</a>
                    </div>
                    <div class="cnt clearfix">
-                        <div class="cnt-col">
-                        <div class="ex">
+                        <div class="cnt-column">
+                        <div class="cnt-image">
                         <img src="http://lorempixel.com/300/380">
                         </div>
 
-
-                        
-                         <h3>Lorem Ipsum dolor </h3>
+                        <h3>Lorem Ipsum dolor </h3>
                            <div class="text">
                          ellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, </div>
 
-                         <div class="button">read more</div>
+                         <a class="button">read more</a>
                         </div>
                         
                         
-                        <div class="cnt-col">
-                        <div class="ex">
+                        <div class="cnt-column">
+                        <div class="cnt-image">
                         <img src="http://lorempixel.com/300/380">
                         </div>
                          
@@ -103,15 +94,15 @@
                          ellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, 
                          </div>
 
-                         <div class="button">read more</div>
+                         <a class="button">read more</a>
                         </div>
                         
 
                     
-                        <div class="cnt-col"> 
-                        <div class="ex">
+                        <div class="cnt-column"> 
+                        <div class="cnt-image">
                         <img src="http://lorempixel.com/300/380">
-                          </div>
+                        </div>
 
                         
                         <h3>malesuada fames </h3>
@@ -120,7 +111,7 @@
                         </div>
 
 
-                        <div class="button">read more</div>
+                        <a class="button">read more</a>
                         </div>
 
                         
@@ -128,9 +119,9 @@
                     </div>
                      
                      <div class="cnt clearfix">
-                         <div class="cnt-col">
+                         <div class="cnt-column">
                             <div class="cnt-head clearfix">
-                            <div class="col-1">RECENT POSTS</div>
+                            <div class="col-title">RECENT POSTS</div>
                             <a href="">view all</a>
                             </div>
                              
@@ -167,7 +158,7 @@
                          
                          <div class="cnt-video">
                               <div class="cnt-head clearfix ">
-                                <div class="col-1">FEATURED VIDEO</div>
+                                <p class="col-1">FEATURED VIDEO</p>
                               </div>
 
                               <div class="video">
@@ -180,17 +171,14 @@
 
                          </div>
                        </div>
-
+    
+                 
                     </div>
 
-                    <div class="button-shape">
-                      
-                      <a href="#"><img src="img/button-shape.png"></a>
-                      
-                    </div>
-
-                   <div class="footer clearfix">
                    
+                   <div class="footer clearfix">
+                    <button href="#" class="button-shape"></button>
+                  
                      <div class="cnt-col dummy_text">
                        <p> DUMMY TEXT</p>
                        Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper.
@@ -235,6 +223,15 @@
                 });
               });
         
+
+    $(".button-shape").on("click", function (event) {
+        event.preventDefault();
+         
+        $('body,html').animate({scrollTop: 0}, 1000);
+
+    });
+
+
         </script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
